@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Videos</title>
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 5px;
+            color: #333;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        h1 {
+            font-size: 42px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .conversion-form {
+            text-align: center;
+            margin-top: 30px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .input-container,
+        .output-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        select,
+        input[type="number"],
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f2f2f2;
+            color: #333;
+            width: 45%;
+            text-align: center;
+        }
+        button {
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            width: auto;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .result {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .conversion-result {
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        // Lógica de JavaScript aquí
+        /* ... (funciones de conversión anteriores) ... */
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src=https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiM4oeZUOGeXCQ1YB0v-AqgbolvSuJK_AeITU12O7qNPK8yewRL5tdB_JIPvdPFQBGLUbStKjP8iHhBPLNjVqykvIgNOtgnmbShCs9frswm1zOyAzqq342rql8LbUDQgBYOvGpcaK3js7q0R3Ol4B1l9qRQDI07c2THRJYfucPEg59CDbGumNk_mJT0tdU/s320/1687895610550.png alt="Logo de Kobac YP" class="logo">
+            <h1>Kobac YP</h1>
+        </div>
+    </header>
+    <div class="container">
+        <!-- Publicaciones de videos -->
+    </div>
+    <div class="social-links">
+        <!-- Enlaces a redes sociales -->
+    </div>
+    <div class="conversion-form">
+        <h2>Calculadora de Conversión de Temperatura</h2>
+        <div class="input-container">
+            <input type="number" id="temperature" placeholder="Temperatura" step="0.01">
+            <select id="inputUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="output-container">
+            <select id="outputUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button onclick="convertTemperature()">Convertir</button>
+        </div>
+        <p id="result" class="result"></p>
+    </div>
+    <div class="conversion-result">
+        <h3>Resultado de la Conversión</h3>
+        <p id="conversionResult"></p>
+    </div>
+    <script>
+        // Lógica de JavaScript aquí
+        /* ... (función de conversión y actualización de resultado anterior) ... */
+    </script>
+</body>
+</html>
